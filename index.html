@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raider Trainer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous"
+        referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,23 +20,37 @@
     </header>
 
     <main class="container">
-        <section aria-labelledby="students-title">
-            <h2 id="students-title">Students</h2>
+        <section class="team-section" aria-labelledby="students-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">The team</p>
+                    <h2 id="students-title">Students</h2>
+                </div>
+            </div>
 
             <div class="student-list">
                 <article class="student">
                     <h3>Andrii Malakhovtsev</h3>
-                    <a href="https://github.com/malakhovtsev" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="social-link" href="https://github.com/malakhovtsev" target="_blank"
+                        rel="noopener noreferrer" aria-label="Andrii Malakhovtsev on GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
                 </article>
 
                 <article class="student">
                     <h3>Fern Badenhop</h3>
-                    <a href="https://github.com/Zxidenbel" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="social-link" href="https://github.com/Zxidenbel" target="_blank"
+                        rel="noopener noreferrer" aria-label="Fern Badenhop on GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
                 </article>
 
                 <article class="student">
                     <h3>Nathan R. Tuttle</h3>
-                    <a href="https://github.com/ntuttle22" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="social-link" href="https://github.com/ntuttle22" target="_blank"
+                        rel="noopener noreferrer" aria-label="Nathan R. Tuttle on GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
                 </article>
             </div>
         </section>
