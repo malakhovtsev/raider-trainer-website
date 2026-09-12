@@ -1,11 +1,12 @@
 :root {
-    --text: #1f2a24;
-    --muted: #68736c;
-    --background: #f4f5f1;
+    --text: #23262b;
+    --muted: #61666d;
+    --background: #f4f5f6;
     --surface: #ffffff;
-    --border: #d8ded8;
-    --accent: #2d6a4f;
-    --max-width: 900px;
+    --border: #dcdfe3;
+    --accent: #3457d5;
+    --accent-soft: #e6ebfb;
+    --max-width: 980px;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
     margin: 0;
     color: var(--text);
     background: var(--background);
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
 }
 
@@ -30,14 +31,29 @@ a {
 }
 
 .site-header {
-    padding: 4rem 0 3rem;
-    border-bottom: 1px solid var(--border);
+    padding: 5.5rem 0 4.5rem;
+    color: #f5f6f8;
+    background: #2b2f38;
+}
+
+.eyebrow,
+.meta-label {
+    margin: 0;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.site-header .eyebrow {
+    color: #a7b4e8;
 }
 
 .site-header h1 {
     margin: 0 0 0.35rem;
     font-size: clamp(2rem, 5vw, 3.25rem);
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
 }
 
 .site-header p {
@@ -47,42 +63,131 @@ a {
 }
 
 main {
-    padding: 4rem 0 5rem;
+    padding: 4.5rem 0 5rem;
 }
 
 h2 {
     margin: 0 0 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: -0.02em;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    margin: 0.35rem 0 0;
+}
+
+.report {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 12px 30px rgba(30, 32, 38, 0.06);
+}
+
+.report-heading {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 2rem 1.5rem;
+    background: linear-gradient(120deg, #eaeefa, #f8f9fb);
+}
+
+.report-heading h3 {
+    margin: 0.35rem 0 0;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.report-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    padding: 1.35rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.report-meta strong {
+    display: block;
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+}
+
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.report-block h4 {
+    margin: 0 0 0.75rem;
+    font-size: 1.05rem;
+}
+
+.report-block ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+}
+
+.report-block li+li {
+    margin-top: 0.5rem;
+}
+
+.team-section {
+    margin-bottom: 5rem;
 }
 
 .student-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
 .student {
-    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.35rem;
+    width: 100%;
+    max-width: 18rem;
+    padding: 0.75rem 1rem;
     border: 1px solid var(--border);
     border-radius: 8px;
     background: var(--surface);
-    box-shadow: 0 4px 16px rgba(31, 42, 36, 0.04);
+    box-shadow: 0 4px 16px rgba(30, 32, 38, 0.04);
 }
 
 .student h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.1rem;
+    margin: 0 auto 0 0;
+    font-size: 1rem;
 }
 
-.student a {
+.social-link {
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--accent-soft);
     color: var(--accent);
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
-.student a:hover {
-    color: #1f4b38;
+.social-link:hover,
+.social-link:focus-visible {
+    background: var(--accent);
+    color: #fff;
 }
 
 .site-footer {
@@ -107,6 +212,21 @@ h2 {
 
     main {
         padding: 3rem 0 4rem;
+    }
+
+    .section-heading,
+    .report-heading {
+        display: block;
+    }
+
+    .report-heading,
+    .report-meta,
+    .report-grid {
+        padding: 1.5rem;
+    }
+
+    .report-grid {
+        grid-template-columns: 1fr;
     }
 
     .student-list {
