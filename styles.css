@@ -92,6 +92,10 @@ h2 {
     box-shadow: 0 12px 30px rgba(30, 32, 38, 0.06);
 }
 
+.report + .report {
+    margin-top: 2rem;
+}
+
 .report-heading {
     display: flex;
     align-items: start;
