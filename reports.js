@@ -25,7 +25,7 @@ const REPORTS = [
         week: "2026-09-07",
         meetings: 1,
         minutes: 30,
-        attendees: "September 9th – " + DEFAULT_ATTENDEES,
+        attendees: DEFAULT_ATTENDEES,
         completed: [
             'Set up "Requirements_Testing" sheet.',
             'Met around "Requirements_Testing" sheet.',
