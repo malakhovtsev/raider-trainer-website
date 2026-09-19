@@ -151,8 +151,8 @@ h2 {
 }
 
 .student-list {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -230,10 +230,6 @@ h2 {
     }
 
     .report-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .student-list {
         grid-template-columns: 1fr;
     }
 }
