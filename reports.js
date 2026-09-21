@@ -47,6 +47,33 @@ const REPORTS = [
             "Start software requirements document.",
         ],
     },
+    {
+        week: "2026-09-14",
+        meetings: 1,
+        minutes: 60,
+        completed: [
+            'Created "auth", "pose_track", and "frontend" branches in the project repository.',
+            "Created initial validator methods for username and password.",
+            "Added timeline items and styling to the team website.",
+            "Tested YOLO pre-trained model performance.",
+            "Created interface to display OpenCV2 video stream in Qt GUI framework.",
+            "Created a new use case diagram using Excalidraw.",
+            "Met to complete planned features document and distributed all tasks.",
+            "Created hollow login screen, create account screen.",
+        ],
+        planned: [
+            "Have a whiteboard meeting outlining the app, sketching the app, discussing GUI design, and discussing app flow.",
+            "Finalize planned features document with every necessary feature claimed.",
+            "Look into adding project requirements to the website, possibly synchronizing with online document.",
+            "Start on authentication system or local database.",
+            "Support multiple video streams and image processing in Qt.",
+            "Expand on use case diagram and other development graphics.",
+            "Style existing screens to fit sketches.",
+            "Create basic icon for application screens.",
+            "Create hollow exercise tracking screen to embed video stream.",
+            "Start work on a session class for the frontend.",
+        ],
+    },
 ];
 
 function makeElement(tag, className, text) {
