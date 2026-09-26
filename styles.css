@@ -188,6 +188,19 @@ h2 {
     margin-top: 0.5rem;
 }
 
+.report-image {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+}
+
+.report-pending {
+    margin: 0;
+    padding: 2rem;
+    color: var(--muted);
+    font-style: italic;
+}
+
 .team-section {
     margin-bottom: 5rem;
 }

@@ -74,6 +74,14 @@ const REPORTS = [
             "Start work on a session class for the frontend.",
         ],
     },
+    {
+        week: "2026-09-21",
+        image: {
+            src: "docs/images/whiteboard-meeting.png",
+            alt: "Whiteboard sketches from the team's app-flow and UI planning meeting",
+        },
+        // Meetings, work completed, and planned work are coming soon.
+    },
 ];
 
 function makeElement(tag, className, text) {
@@ -113,15 +121,30 @@ function renderReport(report) {
 
     const article = makeElement("article", "report");
 
-    const metaBar = makeElement("div", "report-meta");
-    metaBar.setAttribute("aria-label", "Report details");
-    const count = `${report.meetings} meeting${report.meetings === 1 ? "" : "s"} / ${report.minutes} min`;
-    metaBar.append(meta("Meetings", count), meta("Meeting attendees", report.attendees || DEFAULT_ATTENDEES));
+    if (report.meetings !== undefined) {
+        const metaBar = makeElement("div", "report-meta");
+        metaBar.setAttribute("aria-label", "Report details");
+        const count = `${report.meetings} meeting${report.meetings === 1 ? "" : "s"} / ${report.minutes} min`;
+        metaBar.append(meta("Meetings", count), meta("Meeting attendees", report.attendees || DEFAULT_ATTENDEES));
+        article.append(metaBar);
+    }
 
-    const grid = makeElement("div", "report-grid");
-    grid.append(block("Work completed", report.completed), block("Planned for next week", report.planned));
+    if (report.image) {
+        const img = makeElement("img", "report-image");
+        img.src = report.image.src;
+        img.alt = report.image.alt;
+        img.loading = "lazy";
+        article.append(img);
+    }
 
-    article.append(metaBar, grid);
+    if (report.completed && report.planned) {
+        const grid = makeElement("div", "report-grid");
+        grid.append(block("Work completed", report.completed), block("Planned for next week", report.planned));
+        article.append(grid);
+    } else {
+        article.append(makeElement("p", "report-pending", "Full report coming soon."));
+    }
+
     entry.append(dot, year, article);
     return entry;
 }
