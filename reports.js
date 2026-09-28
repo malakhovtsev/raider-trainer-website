@@ -76,11 +76,27 @@ const REPORTS = [
     },
     {
         week: "2026-09-21",
+        meetings: 1,
+        minutes: 120,
+        attendees: "9/23 – " + DEFAULT_ATTENDEES,
         image: {
             src: "docs/images/whiteboard-meeting.png",
             alt: "Whiteboard sketches from the team's app-flow and UI planning meeting",
         },
-        // Meetings, work completed, and planned work are coming soon.
+        completed: [
+            "Had a collaborative whiteboard meeting to outline the app and to help finalize sub-requirements for the app.",
+            "Added whiteboard meeting results to website.",
+            "Created a flowchart for the full app functionality.",
+            "Finished the requirements sheet, including work commitments and priorities.",
+            "Created markdown version of the requirements sheet for GitHub.",
+            "Created and assigned GitHub issues and sub-issues for each member based on requirement tasks.",
+            "Developed the admin panel screen and workout building screen.",
+            "Developed the home screen.",
+        ],
+        planned: [
+            "Start working on sub-issues for the authentication system in a test terminal environment.",
+            "Look into adding project requirements on the website, possibly pull some information from the requirements sheet to the website.",
+        ],
     },
 ];
 
