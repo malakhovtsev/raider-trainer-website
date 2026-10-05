@@ -98,6 +98,33 @@ const REPORTS = [
             "Look into adding project requirements on the website, possibly pull some information from the requirements sheet to the website.",
         ],
     },
+    {
+        week: "2026-09-28",
+        meetings: 1,
+        minutes: 60,
+        attendees: "9/30 – " + DEFAULT_ATTENDEES,
+        completed: [
+            "Built authentication module with data validation for username and password, locking users on 3 failed login attempts, and an admin panel to unlock them with unit tests.",
+            "Spinned up SQLite database to store these accounts and their states.",
+            "Built terminal frontend to test and demo Authentication module.",
+            "Redirected app flow for frontend.",
+            "Implemented YOLO pose tracking in Ultralytics solutions framework.",
+            "Applied rep counting logic from AI Gym across 5 exercises: push-up, pull-up, biceps curl, triceps pushdown, lateral row.",
+            "Added visual aids to the camera feed using Ultralytics annotator module.",
+            "Recorded live-action demos of 5 exercises.",
+        ],
+        planned: [
+            "Start working on workout results storage.",
+            "Look into JSON formats for performance results vs workout plans.",
+            "Couple CV2 frame delivery into PyQt.",
+            "Couple authentication into frontend.",
+            "Add exercise library module.",
+            "Research methods to improve YOLO's object tracking for humans.",
+            "Refactor Ultralytics solution into a custom framework better suited to our use cases.",
+            "Implement exercise specific tracking logic.",
+            "Complete interface to display webcam feed in Qt graphical framework.",
+        ],
+    },
 ];
 
 function makeElement(tag, className, text) {
