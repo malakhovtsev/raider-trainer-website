@@ -125,6 +125,14 @@ const REPORTS = [
             "Complete interface to display webcam feed in Qt graphical framework.",
         ],
     },
+    {
+        week: "2026-10-05",
+        image: {
+            src: "docs/images/ui-preview.png",
+            alt: "Wireframe preview of the workout plan builder UI, with annotations explaining each panel and control",
+        },
+        // Meetings, work completed, and planned work are coming soon.
+    },
 ];
 
 function makeElement(tag, className, text) {
