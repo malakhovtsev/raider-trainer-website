@@ -127,11 +127,36 @@ const REPORTS = [
     },
     {
         week: "2026-10-05",
+        meetings: 1,
+        minutes: 45,
+        attendees: "10/9 – " + DEFAULT_ATTENDEES,
         image: {
             src: "docs/images/ui-preview.png",
             alt: "Wireframe preview of the workout plan builder UI, with annotations explaining each panel and control",
         },
-        // Meetings, work completed, and planned work are coming soon.
+        completed: [
+            "Added workout results saving service, accepting dummy JSON, storage/deletion of them per user, unit tests covering that module.",
+            "Added workouts menu to terminal app.",
+            "Coupled frontend login screen to auth system.",
+            "Created workout screen.",
+            "Added cv2 video streaming to workout screen.",
+            "Drafted final workout planning screen layout and functionality.",
+            'Added basic "exercise info" schema.',
+            "Began development of API to support threaded integration of webcam feed and pose tracking module into user interface.",
+            "Set up test-driven development workspace for collecting data which constitute workout performance reports.",
+        ],
+        planned: [
+            "Look into potential merge conflicts with Qt frontend.",
+            "Refine workouts saving module based on upcoming merge conflict or new JSONs.",
+            "Start looking into SRS paper.",
+            "Couple pose tracking stream to frontend across threads.",
+            "Create workout planning screen to match layout.",
+            "Create preset selection screen.",
+            "Add OCR readouts and session flow to workout screen.",
+            "Finalize JSON format of workout performance reports and generate entries for a few different exercises (push-up, lateral raise, and hollow hold will cover a lot of ground).",
+            "Get API running pose tracking instances in the app Workout Screen without blocking the GUI or crashing the camera feed.",
+            "Start drafting the SRS document.",
+        ],
     },
 ];
 
