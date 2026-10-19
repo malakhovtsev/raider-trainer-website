@@ -158,6 +158,29 @@ const REPORTS = [
             "Start drafting the SRS document.",
         ],
     },
+    {
+        week: "2026-10-12",
+        meetings: 0,
+        minutes: 0,
+        attendees: "No meetings this week.",
+        completed: [
+            "Opened work on workout planning screen module.",
+            "Added plan view/reordering interface.",
+            "Added details view interface.",
+            "Added exercise library view interface.",
+            "Designed exercise info schema for workout planning screen.",
+            "Prepared APIs for the frontend for each part of the app: workout planning, workout session, saving and displaying workouts for logged users, using dummy values where needed.",
+            "Refined the whole repository into a clean structure with each part in its own folder with its own README.",
+        ],
+        planned: [
+            "Connect workout planning interface to session state.",
+            "Complete workout planning interface.",
+            "Create workout routine display, interface, and timeline system.",
+            "Finalize 2/3 semester demo version of the app.",
+            "Prepare the demo presentation, divide work.",
+            "Start working on SRS, divide work, prepare the draft.",
+        ],
+    },
 ];
 
 function makeElement(tag, className, text) {
