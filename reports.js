@@ -220,7 +220,7 @@ function renderReport(report) {
 
     const article = makeElement("article", "report");
 
-    if (report.meetings !== undefined) {
+    if (report.meetings) {
         const metaBar = makeElement("div", "report-meta");
         metaBar.setAttribute("aria-label", "Report details");
         const count = `${report.meetings} meeting${report.meetings === 1 ? "" : "s"} / ${report.minutes} min`;
