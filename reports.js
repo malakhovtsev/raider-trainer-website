@@ -181,6 +181,17 @@ const REPORTS = [
             "Start working on SRS, divide work, prepare the draft.",
         ],
     },
+    {
+        week: "2026-10-19",
+        meetings: 2,
+        minutes: 100,
+        attendees: "10/19 – Andrii Malakhovtsev, Fern Badenhop; 10/22 – Andrii Malakhovtsev, Nathan Tuttle",
+        videos: [
+            { src: "videos/demo_pushups.mp4", caption: "Push-up pose-tracking demo" },
+            { src: "videos/demo_biceps_curl.mp4", caption: "Biceps curl pose-tracking demo" },
+        ],
+        // Work completed and planned work are coming soon.
+    },
 ];
 
 function makeElement(tag, className, text) {
