@@ -236,6 +236,21 @@ function renderReport(report) {
         article.append(img);
     }
 
+    if (report.videos && report.videos.length) {
+        const videoGrid = makeElement("div", "report-videos");
+        report.videos.forEach((v) => {
+            const figure = makeElement("figure", "report-video");
+            const video = makeElement("video");
+            video.src = v.src;
+            video.controls = true;
+            video.preload = "metadata";
+            figure.append(video);
+            if (v.caption) figure.append(makeElement("figcaption", "", v.caption));
+            videoGrid.append(figure);
+        });
+        article.append(videoGrid);
+    }
+
     if (report.completed && report.planned) {
         const grid = makeElement("div", "report-grid");
         grid.append(block("Work completed", report.completed), block("Planned for next week", report.planned));

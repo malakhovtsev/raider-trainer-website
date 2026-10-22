@@ -201,6 +201,32 @@ h2 {
     font-style: italic;
 }
 
+.report-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.report-video {
+    flex: 1 1 16rem;
+    margin: 0;
+}
+
+.report-video video {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    background: #000;
+}
+
+.report-video figcaption {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
 .team-section {
     margin-bottom: 5rem;
 }
