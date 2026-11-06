@@ -192,6 +192,22 @@ const REPORTS = [
         ],
         // Work completed and planned work are coming soon.
     },
+    {
+        week: "2026-10-26",
+        meetings: 1,
+        minutes: 60,
+        attendees: "10/27 – Andrii Malakhovtsev, Nathan Tuttle, Fern Badenhop (1 hour before the demo)",
+        completed: [
+            "Added and merged final required features for terminal app: webcam, OCR reading, documentation.",
+            "Prepared and presented the terminal demo version of the app.",
+            "Drafted SRS.",
+        ],
+        planned: [
+            "Prepare for SRS demo by filling out the sections lacking.",
+            "Meet with team members before the presentation and finalize the SRS.",
+            "Continue working on final app polishing.",
+        ],
+    },
 ];
 
 function makeElement(tag, className, text) {
