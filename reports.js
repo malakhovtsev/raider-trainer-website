@@ -190,7 +190,17 @@ const REPORTS = [
             { src: "videos/demo_pushups.mp4", caption: "Push-up pose-tracking demo" },
             { src: "videos/demo_biceps_curl.mp4", caption: "Biceps curl pose-tracking demo" },
         ],
-        // Work completed and planned work are coming soon.
+        completed: [
+            "Filling multiple sections in SRS.",
+            'Flatten all directories in the repository to final "folder = module" look.',
+            "Do work on different branches towards finalizing the terminal version of the app and separately on future Qt frontend look.",
+        ],
+        planned: [
+            "Finalize the demo version of the terminal version of the app.",
+            "Check-in with Mary with the demo version of the app.",
+            "Prepare with a team to demo the app and synchronize our understanding and progress of each other's branches of the app.",
+            "Finalize SRS document.",
+        ],
     },
     {
         week: "2026-10-26",
