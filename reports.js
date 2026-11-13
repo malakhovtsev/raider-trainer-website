@@ -218,6 +218,21 @@ const REPORTS = [
             "Continue working on final app polishing.",
         ],
     },
+    {
+        week: "2026-11-02",
+        meetings: 1,
+        minutes: 60,
+        attendees: "11/5 – Andrii Malakhovtsev, Fern Badenhop (time combined both pre-Mary feedback + during)",
+        completed: [
+            "Demo'd the SRS with Mary, took the feedback and put it in the comments on the document.",
+            "Put the feedback on Discord for other members to consider and start looking into.",
+        ],
+        planned: [
+            "Continue filling out SRS with feedback provided by Mary.",
+            "Continue working on Qt frontend of the app.",
+            "Continue working on final app polishing, possibly by finding holes during the filling out of SRS.",
+        ],
+    },
 ];
 
 function makeElement(tag, className, text) {
