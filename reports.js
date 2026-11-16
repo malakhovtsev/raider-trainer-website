@@ -233,6 +233,20 @@ const REPORTS = [
             "Continue working on final app polishing, possibly by finding holes during the filling out of SRS.",
         ],
     },
+    {
+        week: "2026-11-09",
+        meetings: 0,
+        minutes: 0,
+        attendees: "No meetings this week.",
+        completed: [
+            "Filled out the Requirements tab on Requirements sheet up to current progress on the main branch.",
+            "Filled out Testing tab of the Requirements sheets, got all the tests from the code into the table, created IDs for them, assigned each to the Requirement ID from original Requirements tab.",
+        ],
+        planned: [
+            "Continue filling out SRS with feedback provided by Mary.",
+            "Continue working on final app polishing, possibly by finding holes during the filling out of SRS.",
+        ],
+    },
 ];
 
 function makeElement(tag, className, text) {
