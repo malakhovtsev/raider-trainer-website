@@ -241,10 +241,16 @@ const REPORTS = [
         completed: [
             "Filled out the Requirements tab on Requirements sheet up to current progress on the main branch.",
             "Filled out Testing tab of the Requirements sheets, got all the tests from the code into the table, created IDs for them, assigned each to the Requirement ID from original Requirements tab.",
+            "Started work on new functional-based Qt branch up-to-date with main.",
+            "Completed home screen, login screen, create account screen, with auth-service functionality.",
+            "Developed modules to simplify the specification and display of menu widgets with functional programming principles.",
         ],
         planned: [
             "Continue filling out SRS with feedback provided by Mary.",
             "Continue working on final app polishing, possibly by finding holes during the filling out of SRS.",
+            "Complete Qt workout planning screen based on terminal frontend workout planning.",
+            "Complete Qt workout screen.",
+            "Complete Qt weight recognition routine.",
         ],
     },
 ];
