@@ -57,6 +57,7 @@ a {
 }
 
 .site-header p {
+    max-width: 40rem;
     margin: 0;
     color: var(--muted);
     font-size: 1.05rem;
@@ -231,6 +232,83 @@ h2 {
     margin-bottom: 5rem;
 }
 
+.requirements-section {
+    margin-bottom: 5rem;
+}
+
+.requirements-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 12px 30px rgba(30, 32, 38, 0.06);
+}
+
+.requirements-table th {
+    padding: 0.9rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.requirements-table td {
+    padding: 0.7rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+    font-size: 0.92rem;
+}
+
+.requirements-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.requirement-category-row {
+    background: linear-gradient(120deg, #eaeefa, #f8f9fb);
+}
+
+.requirement-category-row td:first-child {
+    font-weight: 700;
+}
+
+.requirement-category-row td:nth-child(2) {
+    color: var(--muted);
+}
+
+.requirement-item-row td:first-child {
+    color: var(--muted);
+    padding-left: 2.5rem;
+}
+
+.status-pill {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status-complete {
+    background: #e3f6e9;
+    color: #1f8a4c;
+}
+
+.status-in-progress {
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.status-incomplete {
+    background: #f1f2f4;
+    color: var(--muted);
+}
+
 .student-list {
     display: flex;
     flex-wrap: wrap;
@@ -240,10 +318,10 @@ h2 {
 .student {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 0.35rem;
+    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
-    max-width: 18rem;
+    max-width: 21rem;
     padding: 0.75rem 1rem;
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -251,9 +329,19 @@ h2 {
     box-shadow: 0 4px 16px rgba(30, 32, 38, 0.04);
 }
 
+.student-info {
+    min-width: 0;
+}
+
 .student h3 {
-    margin: 0 auto 0 0;
+    margin: 0;
     font-size: 1rem;
+}
+
+.student-role {
+    margin: 0.2rem 0 0;
+    color: var(--muted);
+    font-size: 0.8rem;
 }
 
 .social-link {
@@ -306,6 +394,15 @@ h2 {
     .report-meta,
     .report-grid {
         padding: 1.5rem;
+    }
+
+    .requirements-table th,
+    .requirements-table td {
+        padding: 0.6rem 1rem;
+    }
+
+    .requirement-item-row td:first-child {
+        padding-left: 1.75rem;
     }
 
     .report-grid {
